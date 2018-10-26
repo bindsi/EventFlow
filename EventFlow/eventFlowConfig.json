@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    {
+      "type": "Trace",
+      "traceLevel": "All",
+      "sources": [
+        {
+          "providerName": "Daimler.Van.SPP.CustomActivity"
+        }
+      ]
+    },
+    {
+      "type": "Microsoft.Extensions.Logging",
+      "sources": [
+        {
+          "providerName": "Daimler.Van.SPP.CustomActivity"
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "StdOutput"
+    },
+    {
+      "type": "OmsOutput",
+      "workspaceId": "",
+      "workspaceKey": "",
+      "logTypeName": "EventFlow"
+    }
+  ],
+  "schemaVersion": "2016-08-11",
+
+  "settings": {
+    "pipelineBufferSize": "1000",
+    "maxEventBatchSize": "100",
+    "maxBatchDelayMsec": "500",
+    "maxConcurrency": "8",
+    "pipelineCompletionTimeoutMsec": "30000"
+  },
+  "extensions": []
+}
