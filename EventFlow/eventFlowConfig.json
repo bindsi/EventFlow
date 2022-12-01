@@ -5,7 +5,7 @@
       "traceLevel": "All",
       "sources": [
         {
-          "providerName": "Daimler.Van.SPP.CustomActivity"
+          "providerName": "EventFlow.Namespace"
         }
       ]
     },
@@ -13,7 +13,7 @@
       "type": "Microsoft.Extensions.Logging",
       "sources": [
         {
-          "providerName": "Daimler.Van.SPP.CustomActivity"
+          "providerName": "EventFlow.Namespace"
         }
       ]
     }
